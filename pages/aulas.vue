@@ -7,6 +7,7 @@
                 <p>{{ aula.descricao }}</p>
                 <p>Duração: {{ aula.duracao }} minutos</p>
                 <p>Status: {{ aula.status }}</p>
+                <img :src="aula.imagem" alt="Imagem da aula">
             </li>
         </ul>
     </div>
@@ -18,6 +19,7 @@ interface Aula {
     titulo: string;
     descricao: string;
     duracao: number;
+    imagem: string,
     status: boolean;
 }
 
