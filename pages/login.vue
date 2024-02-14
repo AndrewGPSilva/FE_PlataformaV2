@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import axios from "axios"
-import { getData, setData } from 'nuxt-storage/local-storage';
+import { setData } from 'nuxt-storage/local-storage';
 
 export default {
     data() {
