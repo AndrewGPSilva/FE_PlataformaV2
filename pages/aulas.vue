@@ -22,16 +22,17 @@ interface Aula {
 }
 
 import axios from "axios";
+import { getData } from 'nuxt-storage/local-storage';
 
 export default {
     data() {
         return {
-            dados: {} as Record<string, Aula[]>,
+            dados: [] as Aula[]
         };
     },
     methods: {
         aulas() {
-            const token = localStorage.getItem("Token");
+            const token = getData('Token');
             const headers = {
                 'Authorization': `Bearer ${token}`,
             };

@@ -13,6 +13,7 @@
 
 <script lang="ts">
 import axios from "axios"
+import { getData, setData } from 'nuxt-storage/local-storage';
 
 export default {
     data() {
@@ -32,7 +33,7 @@ export default {
                 .then((response) => {
                     const Token = response.data.token;
 
-                    localStorage.setItem('Token', Token);
+                    setData('Token', Token);
 
                     this.$router.push({ path: "/aulas"});
                 })
