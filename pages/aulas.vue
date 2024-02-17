@@ -56,9 +56,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-ul li {
-    list-style: none;
-}
-</style>
