@@ -66,5 +66,7 @@ nav {
     color: black;
     font-weight: bold;
     cursor: pointer;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 </style>
