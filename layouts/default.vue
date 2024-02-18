@@ -2,7 +2,8 @@
     <header>
         <GlobalNavbar />
     </header>
-    <main>
+    <main> 
+        <InicioCategorias />
         <slot />
     </main>
     <footer>
