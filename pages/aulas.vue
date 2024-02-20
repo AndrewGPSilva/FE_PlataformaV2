@@ -1,4 +1,9 @@
 <template>
+    <Head>
+        <Title>
+            Gpf.ev - {{ name }}
+        </Title>
+    </Head>
     <div>
         <h1>Aulas:</h1>
         <ul>
@@ -29,7 +34,8 @@ import { getData } from 'nuxt-storage/local-storage';
 export default {
     data() {
         return {
-            dados: [] as Aula[]
+            dados: [] as Aula[],
+            name: "Aulas"
         };
     },
     methods: {

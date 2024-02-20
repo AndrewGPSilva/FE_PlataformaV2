@@ -1,4 +1,9 @@
 <template>
+    <Head>
+        <Title>
+            Gpf.ev - {{ name }}
+        </Title>
+    </Head>
     <main>
         <h1>Login</h1>
         <form @submit.prevent="efetuarLogin">
@@ -19,7 +24,8 @@ export default {
     data() {
         return {
             login: "",
-            senha: ""
+            senha: "",
+            name: "Login"
         }
     },
     methods: {
@@ -35,7 +41,7 @@ export default {
 
                     setData('Token', Token);
 
-                    this.$router.push({ path: "/aulas"});
+                    this.$router.push({ path: "/aulas" });
                 })
                 .catch((error) => {
                     console.log(error);
