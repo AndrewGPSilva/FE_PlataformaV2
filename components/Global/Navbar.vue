@@ -16,7 +16,7 @@
                 Entrar
             </NuxtLink>
             <button>
-                Matricule-Se
+                <NuxtLink to="matricula">Matricule-Se</NuxtLink>
             </button>
         </div>
     </nav>
@@ -68,5 +68,13 @@ nav {
     cursor: pointer;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.container-links button a {
+    color: black;
+}
+
+.container-links button a:hover {
+    background-color: transparent;
 }
 </style>
